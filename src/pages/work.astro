@@ -1,7 +1,57 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+// Example project data (replace with your actual projects)
+const projects = [
+  {
+    title: "Janet & Ray's",
+    description: "Check out this beautiful Arizona Restaurant.",
+    imageUrl: "/janetandrays.png",
+    projectUrl: "https://janetandrays.com",
+  },
+  {
+    title: "Waytech",
+    description: "Enhance your business with Waytech.",
+    imageUrl: "/waytech.png",
+    projectUrl: "https://wayytech.com",
+  },
+  {
+    title: "Ascend Hiring",
+    description: "Hire the best talent with Ascend Hiring.",
+    imageUrl: "/ascendhiring.png",
+    projectUrl: "https://ascendhiring.com",
+  },
+  // ... add more projects as needed
+];
 ---
 
 <Layout title="Work">
-  <h1>Work</h1>
+  <div class="max-w-5xl mx-auto p-6 space-y-6">
+    <h1 class="text-4xl font-bold dark:text-white">Work</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {
+        projects.map((project) => (
+          <a
+            href={project.projectUrl}
+            class="group opacity-80 hover:opacity-100 block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 bg-card dark:bg-card-dark"
+          >
+            <img
+              src={project.imageUrl}
+              alt={project.title}
+              class="w-full object-cover h-48"
+            />
+            <div class="p-4">
+              <h2 class="text-2xl font-semibold dark:text-white">
+                {project.title}
+              </h2>
+              <p class="mt-2 text-gray-600 dark:text-gray-300">
+                {project.description}
+              </p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
 </Layout>
