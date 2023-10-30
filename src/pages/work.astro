@@ -1,28 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-// Example project data (replace with your actual projects)
-const projects = [
-  {
-    title: "Janet & Ray's",
-    description: "Check out this beautiful Arizona Restaurant.",
-    imageUrl: "/janetandrays.png",
-    projectUrl: "https://janetandrays.com",
-  },
-  {
-    title: "Waytech",
-    description: "Enhance your business with Waytech.",
-    imageUrl: "/waytech.png",
-    projectUrl: "https://wayytech.com",
-  },
-  {
-    title: "Ascend Hiring",
-    description: "Hire the best talent with Ascend Hiring.",
-    imageUrl: "/ascendhiring.png",
-    projectUrl: "https://ascendhiring.com",
-  },
-  // ... add more projects as needed
-];
+import { projects } from "../data/projects";
 ---
 
 <Layout title="Work">
@@ -34,6 +12,7 @@ const projects = [
         projects.map((project) => (
           <a
             href={project.projectUrl}
+            target="_blank"
             class="group opacity-80 hover:opacity-100 block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 bg-card dark:bg-card-dark"
           >
             <img
@@ -55,3 +34,4 @@ const projects = [
     </div>
   </div>
 </Layout>
+ ../data/projects
