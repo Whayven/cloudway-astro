@@ -64,7 +64,7 @@ const Footer = () => {
             Terms of Service
           </a>
           <span className="text-gray-600 dark:text-gray-500">
-            © 2023 CW. All Rights Reserved.
+            © 2023 CloudWay. All Rights Reserved.
           </span>
         </div>
       </div>
