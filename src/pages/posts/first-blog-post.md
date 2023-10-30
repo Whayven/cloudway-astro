@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: 'My First Blog Post'
-pubDate: 2022-07-01
+pubDate: 2023-10-29
 description: "This is the first post of my new Astro blog."
 author: "Wayne Foster Jr"
 image:
