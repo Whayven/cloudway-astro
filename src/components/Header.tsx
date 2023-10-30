@@ -1,10 +1,14 @@
+interface HeaderProps {
+  pathname: string;
+}
+
 const links = [
   { name: "Home", href: "/" },
   { name: "Work", href: "/work" },
   { name: "Blog", href: "/blog" },
 ];
 
-const Header = ({ pathname }: { pathname: string }) => {
+const Header = ({ pathname }: HeaderProps) => {
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-custom-light text-sm py-4 dark:bg-gray-800">
       <nav

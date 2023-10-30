@@ -1,4 +1,9 @@
-const BlogPost = ({ title, url }: { title: string; url: string }) => {
+interface BlogPostProps {
+  title: string;
+  url: string;
+}
+
+const BlogPost = ({ title, url }: BlogPostProps) => {
   return (
     <li>
       <a
