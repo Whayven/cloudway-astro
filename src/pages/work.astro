@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { projects } from "../data/projects";
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <Layout title="Work">
@@ -10,25 +11,12 @@ import { projects } from "../data/projects";
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       {
         projects.map((project) => (
-          <a
-            href={project.projectUrl}
-            target="_blank"
-            class="group opacity-80 hover:opacity-100 block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 bg-card dark:bg-card-dark"
-          >
-            <img
-              src={project.imageUrl}
-              alt={project.title}
-              class="w-full object-cover h-48"
-            />
-            <div class="p-4">
-              <h2 class="text-2xl font-semibold dark:text-white">
-                {project.title}
-              </h2>
-              <p class="mt-2 text-gray-600 dark:text-gray-300">
-                {project.description}
-              </p>
-            </div>
-          </a>
+          <ProjectCard
+            imageUrl={project.imageUrl}
+            title={project.title}
+            description={project.description}
+            projectUrl={project.projectUrl}
+          />
         ))
       }
     </div>
