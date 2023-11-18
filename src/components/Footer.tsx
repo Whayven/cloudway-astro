@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2 sm:flex-row sm:gap-5">
-          <a
+          {/* <a
             href="#"
             className="text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
           >
@@ -62,7 +62,7 @@ const Footer = () => {
             className="text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
           >
             Terms of Service
-          </a>
+          </a> */}
           <span className="text-gray-600 dark:text-gray-500">
             © 2023 CloudWay. All Rights Reserved.
           </span>
