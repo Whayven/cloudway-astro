@@ -39,11 +39,11 @@ const Footer = () => {
             <text
               x="5"
               y="30"
-              font-family="Arial"
-              font-size="30"
+              fontFamily="Arial"
+              fontSize="30"
               fill="none"
               stroke="url(#nebulaGradientFooter)"
-              stroke-width="2"
+              strokeWidth="2"
             >
               CW
             </text>
