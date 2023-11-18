@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import coverImage from "../assets/images/cover.png";
 ---
 
 <Layout title="CloudWay">
@@ -13,7 +14,12 @@ import Card from "../components/Card.astro";
         >CloudWay</span
       >
     </h1>
-    <ul role="list" class="grid lg:grid-cols-2 grid-cols-1 gap-8 p-0">
+    <img
+      src={coverImage.src}
+      alt="Wayne Foster Jr"
+      class="rounded-full mx-auto mb-4"
+    />
+    <ul role="list" class="grid lg:grid-cols-2 grid-cols-1 gap-8 p-0 py-2">
       <Card
         href="/work"
         title="Portfolio"
@@ -35,5 +41,84 @@ import Card from "../components/Card.astro";
         body="Get in touch with me on LinkedIn."
       />
     </ul>
+    {/* About me Section */}
+    <section class="mt-8">
+      <h2 class="text-3xl font-bold leading-tight text-center mb-4">
+        About Me
+      </h2>
+      <div class="text-lg text-center mx-4">
+        <p>
+          Hello! I'm a passionate <span class="font-semibold"
+            >Full Stack Web Developer</span
+          > committed to crafting digital experiences that stand out. My journey
+          in web development is driven by my love for technology and the joy of
+          continuous learning. Currently, I'm part of the innovative team at
+          <a
+            href="https://www.ascendhiring.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-500 hover:text-blue-700"
+          >
+            <span
+              class="underline underline-offset-2 duration-300 transition-all"
+              >Ascend Hiring</span
+            >
+          </a>, where we're revolutionizing the recruitment process with AI.
+        </p>
+        <p class="mt-4">
+          When not coding, I enjoy quality time with my family, exploring the
+          worlds of video games, and diving into anime. Some of my top picks on
+          Netflix include
+          <a
+            href="https://www.netflix.com/title/80105699"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-500 hover:text-blue-700"
+          >
+            <span
+              class="underline underline-offset-2 duration-300 transition-all"
+              >Travelers</span
+            >
+          </a>,
+          <a
+            href="https://www.netflix.com/title/80044950"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-500 hover:text-blue-700"
+          >
+            <span
+              class="underline underline-offset-2 duration-300 transition-all"
+              >The OA</span
+            >
+          </a>, and
+          <a
+            href="https://www.netflix.com/title/80114855"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-500 hover:text-blue-700"
+          >
+            <span
+              class="underline underline-offset-2 duration-300 transition-all"
+              >Mind Hunter</span
+            >
+          </a>.
+        </p>
+        <p class="mt-4">
+          Looking for a creative and efficient Full Stack Developer? I'm open to
+          exciting opportunities. Connect with me on
+          <a
+            href="https://www.linkedin.com/in/wayne-foster-jr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-500 hover:text-blue-700"
+          >
+            <span
+              class="underline underline-offset-2 duration-300 transition-all"
+              >LinkedIn</span
+            ></a
+          >
+        </p> and let's create something amazing together!
+      </div>
+    </section>
   </main>
 </Layout>

@@ -28,7 +28,7 @@ const pathname = new URL(Astro.request.url).pathname;
     class="font-poppins flex flex-col min-h-screen bg-custom-light text-custom-dark dark:bg-custom-dark dark:text-custom-light"
   >
     <Header pathname={pathname} />
-    <div class="flex-1">
+    <div class="flex-1 py-8">
       <slot />
     </div>
     <Footer />
