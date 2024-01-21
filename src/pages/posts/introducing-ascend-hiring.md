@@ -41,7 +41,7 @@ Make informed decisions backed by data. Ascend Hiring provides insightful analyt
 Getting started with Ascend Hiring is a breeze. Follow these simple steps to revolutionize your hiring process:
 
 1. **Sign Up:**
-   Visit our [website](https://www.ascend-hiring.com) and sign up for an account. It takes just a few minutes to get started.
+   Visit our [website](https://www.ascendhiring.com) and sign up for an account. It takes just a few minutes to get started.
 
 2. **Create Your Team:**
    Invite your hiring team members to join Ascend Hiring and start collaborating effortlessly.
@@ -59,6 +59,6 @@ Getting started with Ascend Hiring is a breeze. Follow these simple steps to rev
 
 Are you ready to revolutionize your hiring process? Join Ascend Hiring today and experience the future of talent acquisition. Elevate your team, elevate your candidates – with Ascend Hiring, the sky's the limit.
 
-[Sign Up Now](https://www.ascend-hiring.com)
+[Sign Up Now](https://www.ascendhiring.com)
 
 *Ascend Hiring – Where Talent Meets Opportunity.*
