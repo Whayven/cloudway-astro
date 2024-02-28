@@ -93,5 +93,9 @@ export default {
       },
     },
   },
-  plugins: [preline, require("@tailwindcss/typography")],
+  plugins: [
+    preline,
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+  ],
 };
