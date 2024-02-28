@@ -7,7 +7,7 @@ author: "Wayne Foster Jr"
 image:
   url: "https://docs.astro.build/assets/full-logo-light.png"
   alt: "The Astro logo with the word One."
-tags: ["astro", "blogging", "learning in public"]
+tags: ["astro", "blogging", "learning"]
 ---
 
 ### Intro:
