@@ -7,7 +7,7 @@ author: "Wayne Foster Jr"
 image:
   url: "https://drive.google.com/thumbnail?id=1LNGaFov_HLMzpET_LL5I-UDFNsDyQhoE"
   alt: "Ascend Hiring Logo"
-tags: ["astro", "blogging", "learning in public"]
+tags: ["ai", "recruitment"]
 ---
 
 # Introducing Ascend Hiring
