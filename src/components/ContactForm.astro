@@ -1,5 +1,6 @@
 ---
 import sgMail from "@sendgrid/mail";
+import { GradientTitle } from "./ui/GradientTitle";
 
 const clearForm = () => {
   const form = document.querySelector("form");
@@ -76,7 +77,9 @@ if (Astro.request.method === "POST") {
 
 <div class="isolate py-8 mt-8">
   <div class="mx-auto max-w-2xl text-center">
-    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Contact Us</h2>
+    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+      <GradientTitle title={"Contact Us"} />
+    </h2>
     <p class="mt-2 text-lg leading-8">
       We'd love to hear from you! Send us a message using the form below and
       we'll get back to you as soon as possible.

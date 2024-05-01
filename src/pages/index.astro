@@ -3,18 +3,22 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import coverImage from "../assets/images/cover.png";
 import ContactForm from "../components/ContactForm.astro";
+import { AboutSection } from "../components/AboutSection";
+import { ServiceSection } from "../components/ServiceSection";
+import { GradientTitle } from "../components/ui/GradientTitle";
+import { WorkSection } from "../components/WorkSection";
 ---
 
 <Layout title="CloudWay">
   <main
-    class="m-auto p-4 sm:w-[800px] lg:w-2/3 max-w-[calc(100%-2rem)] text-custom-dark dark:text-custom-light text-xl leading-relaxed"
+    class="m-auto p-4 sm:w-[800px] lg:w-1/2 max-w-[calc(100%-2rem)] text-custom-dark dark:text-custom-light text-xl leading-relaxed"
   >
     <h1 class="text-5xl font-bold leading-tight text-center mb-4">
-      Welcome to <span
-        class="bg-gradient-to-r from-accent to-accent-dark dark:to-accent-light bg-clip-text text-transparent dark:bg-gradient-to-l"
-        >CloudWay</span
-      >
+      We are <GradientTitle title="CloudWay" />
     </h1>
+    <p class="text-2xl text-center mx-4">
+      Elevate your business with our cutting-edge software solutions.
+    </p>
     <img
       src={coverImage.src}
       alt="Wayne Foster Jr"
@@ -32,50 +36,16 @@ import ContactForm from "../components/ContactForm.astro";
         body="Read more about our thoughts on tech."
       />
     </ul>
-    {/* About Us Section */}
     <section class="mt-8">
-      <h2 class="text-3xl font-bold leading-tight text-center mb-4">
-        About Us
-      </h2>
-      <div class="text-lg text-center mx-4">
-        Welcome to CloudWay, a team of technology experts who are passionate
-        about building amazing software solutions. We specialize in building web
-        and mobile applications using the latest technologies. Here at CloudWay,
-        we believe in building software that is scalable, secure, and easy to
-        maintain.
-      </div>
+      {/* About Us Section */}
+      <AboutSection />
 
-      <p class="text-lg text-center mx-4 mt-4">
-        We are committed to providing our clients with the best possible
-        solutions to their business needs. Our team has years of experience in
-        developing software for various industries including finance, retail,
-        and more. If you're looking for a team that will work hard to deliver
-        high-quality results on time and within budget, then look no further
-        than CloudWay!
-      </p>
+      {/* Services Section */}
+      <ServiceSection />
+
+      {/* Work Section */}
+      <WorkSection />
+      <ContactForm />
     </section>
-    {/* End About Us Section */}
-
-    {/* Services Section */}
-    <section class="mt-8">
-      <h2 class="text-3xl font-bold leading-tight text-center mb-4">
-        Services
-      </h2>
-      <div class="text-lg text-center mx-4">
-        We offer a wide range of services to help you grow your business. Our
-        team is made up of experts in web development, mobile app development,
-        and more. Whether you need help with design or development, we can help!
-      </div>
-
-      <p class="text-lg text-center mx-4 mt-4">
-        We have years of experience working with startups and small businesses
-        alike. Our goal is to provide our clients with the best possible
-        solutions for their needs. If you're looking for a team that will work
-        hard to deliver high-quality results on time and within budget, then
-        look no further than CloudWay!
-      </p>
-    </section>
-    {/* End Services Section */}
-    <ContactForm />
   </main>
 </Layout>

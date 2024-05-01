@@ -1,3 +1,5 @@
+import logo from "../assets/CloudWay.svg";
+
 interface HeaderProps {
   pathname: string;
 }
@@ -5,62 +7,19 @@ interface HeaderProps {
 const links = [
   { name: "Home", href: "/" },
   { name: "Work", href: "/work" },
-  { name: "Blog", href: "/blog" },
 ];
 
 const Header = ({ pathname }: HeaderProps) => {
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-custom-light text-sm py-4 dark:bg-gray-800">
+    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-custom-light text-sm py-4 dark:bg-transparent">
       <nav
         className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
-          <svg
-            className="astro-a"
-            width="100"
-            height="50"
-            viewBox="0 0 100 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <defs>
-              <linearGradient
-                id="nebulaGradient"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop
-                  offset="0%"
-                  style={{ stopColor: "white", stopOpacity: 1 }}
-                />
-                <stop
-                  offset="50%"
-                  style={{ stopColor: "skyblue", stopOpacity: 1 }}
-                />
-                <stop
-                  offset="100%"
-                  style={{ stopColor: "purple", stopOpacity: 1 }}
-                />
-              </linearGradient>
-            </defs>
-
-            <text
-              x="5"
-              y="40"
-              fontFamily="Arial"
-              fontSize="40"
-              fill="none"
-              stroke="url(#nebulaGradient)"
-              strokeWidth="2"
-            >
-              CW
-            </text>
-          </svg>
+          <a href="/" className="flex items-center gap-2">
+            <img src={logo.src} alt="CloudWay" className="h-[50px]" />
+          </a>
           <div className="sm:hidden">
             <button
               type="button"
