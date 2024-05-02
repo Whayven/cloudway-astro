@@ -8,8 +8,8 @@ const clearForm = () => {
   form.reset();
 };
 
-sgMail.setApiKey(import.meta.env.SENDGRID_API_KEY);
 if (Astro.request.method === "POST") {
+  sgMail.setApiKey(import.meta.env.SENDGRID_API_KEY);
   try {
     const data = await Astro.request.formData();
     const firstName = data.get("first-name");

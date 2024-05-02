@@ -40,10 +40,10 @@ const WorkItem = ({
 }: WorkItemProps) => {
   return (
     <a
-      className="flex gap-4 p-4 items-center rounded-lg transition ease-in-out duration-300 hover:bg-gray-950/50"
+      className="flex flex-col md:flex-row gap-4 p-4 items-center rounded-lg transition ease-in-out duration-300 hover:bg-gray-950/50"
       href={projectUrl}
     >
-      <img src={imageUrl.src} alt={title} className="w-52" />
+      <img src={imageUrl.src} alt={title} className="md:w-52" />
       <div className="flex-1 shrink-0">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
           <GradientTitle title={title} />
