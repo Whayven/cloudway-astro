@@ -1,5 +1,5 @@
-import { GradientTitle } from "./ui/GradientTitle";
-import { projects } from "../data/projects";
+import { GradientTitle } from "@/components/ui/GradientTitle";
+import { projects } from "@/data/projects";
 export const WorkSection = () => {
   return (
     <section className="py-20">

@@ -1,4 +1,4 @@
-import logo from "../assets/CloudWay.svg";
+import logo from "@/assets/CloudWay.svg";
 
 interface HeaderProps {
   pathname: string;

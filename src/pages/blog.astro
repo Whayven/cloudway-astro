@@ -1,8 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import BlogPost from "../components/BlogPost.tsx";
+import Layout from "@/layouts/Layout.astro";
+import BlogPost from "@/components/BlogPost.tsx";
 const pageTitle = "CloudWay Blog";
-const allPosts = await Astro.glob("../pages/posts/*.md");
+const allPosts = await Astro.glob("@/pages/posts/*.md");
 ---
 
 <Layout title={pageTitle}>

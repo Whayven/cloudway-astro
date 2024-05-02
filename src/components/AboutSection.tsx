@@ -1,4 +1,4 @@
-import { GradientTitle } from "./ui/GradientTitle";
+import { GradientTitle } from "@/components/ui/GradientTitle";
 
 export const AboutSection = () => {
   return (
