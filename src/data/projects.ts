@@ -3,13 +3,13 @@ import waytechImage from "../assets/images/waytech.png";
 import ascendImage from "../assets/images/ascendhiring.png";
 
 export const projects = [
-  {
-    title: "Janet & Ray's",
-    description: "Serving the best carribean cuisine in Tuscon, AZ.",
-    imageUrl: janetImage,
-    projectUrl: "https://janetandrays.com",
-    skills: ["NextJS", "Tailwind", "Prisma", "PostgreSQL", "Vercel"],
-  },
+  // {
+  //   title: "Janet & Ray's",
+  //   description: "Serving the best carribean cuisine in Tuscon, AZ.",
+  //   imageUrl: janetImage,
+  //   projectUrl: "https://janetandrays.com",
+  //   skills: ["NextJS", "Tailwind", "Prisma", "PostgreSQL", "Vercel"],
+  // },
   {
     title: "Waytech",
     description: "Take your business to the next level with Waytech.",
