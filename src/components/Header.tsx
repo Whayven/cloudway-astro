@@ -7,6 +7,7 @@ interface HeaderProps {
 const links = [
   { name: "Home", href: "/" },
   { name: "Work", href: "/work" },
+  { name: "Blog", href: "https://blog.cloud-way.dev", external: true },
 ];
 
 const Header = ({ pathname }: HeaderProps) => {
@@ -63,6 +64,7 @@ const Header = ({ pathname }: HeaderProps) => {
                 <a
                   key={link.name}
                   href={link.href}
+                  target={link.external ? "_blank" : "_self"}
                   className={`${
                     currentPath
                       ? "text-blue-400 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-400"
